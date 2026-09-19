@@ -10,7 +10,7 @@ namespace ProductApi.Models
         public decimal TotalAmount { get; set; }
         public required string Status { get; set; }
         public long CustomerId { get; set; }
-        public Customer Customer { get; set; }
-        public ICollection<OrderDetail> Items { get; set; }
+        public Customer Customer { get; set; } = null!;
+        public ICollection<OrderDetail> Items { get; set; } = [];
     }
 }

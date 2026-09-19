@@ -13,7 +13,7 @@ namespace TiendaPromElec.Pages
             _context = context;
         }
 
-        public IEnumerable<Product> Product { get; set; }
+        public IEnumerable<Product> Product { get; set; } = [];
 
         public async Task OnGetAsync()
         {
